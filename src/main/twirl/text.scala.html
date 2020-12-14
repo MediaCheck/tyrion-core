@@ -1,0 +1,32 @@
+@(size: String, text: String)
+
+<table width="100%" class="mcnTextBlock" style="min-width:100%;" border="0" cellspacing="0" cellpadding="0">
+  <tbody class="mcnTextBlockOuter">
+    <tr>
+      <td class="mcnTextBlockInner" valign="top">
+          <!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+				<tr>
+				<![endif]-->
+
+          <!--[if mso]>
+				<td valign="top" width="600" style="width:600px;">
+				<![endif]-->
+        <table width="100%" align="left" class="mcnTextContentContainer" style="max-width:100%; min-width:100%;" border="0" cellspacing="0" cellpadding="0">
+          <tbody><tr>
+
+            <td class="mcnTextContent" valign="top" style="padding: 9px;color: #888888;font-family: &quot;Helvetica Neue&quot;,Helvetica,Arial,Verdana,sans-serif;font-size: @size;">@Html(text)</td>
+          </tr>
+          </tbody></table>
+          <!--[if mso]>
+				</td>
+				<![endif]-->
+
+          <!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+      </td>
+    </tr>
+  </tbody>
+</table>

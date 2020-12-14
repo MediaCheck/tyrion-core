@@ -1,0 +1,11 @@
+package core.network;
+
+public enum NetworkStatus {
+    NOT_YET_FIRST_CONNECTED,
+    FREEZED,
+    SHUT_DOWN,
+    SYNCHRONIZATION_IN_PROGRESS,
+    OFFLINE,
+    ONLINE,
+    UNKNOWN_LOST_CONNECTION_WITH_SERVER
+}

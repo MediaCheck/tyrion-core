@@ -1,0 +1,96 @@
+@(content: String, subject: String)
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>@subject</title>
+
+
+    </head>
+    <body style="font-family: Helvetica;background-color: white;margin-right: auto;margin-left: auto;padding-top: 0 !important;padding-bottom: 0 !important;width: 500px !important;-webkit-text-size-adjust: 100% !important;-ms-text-size-adjust: 100% !important;-webkit-font-smoothing: antialiased !important;">
+        <style type="text/css">
+        body {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            width: 500px !important;
+            font-family: Helvetica;
+            -webkit-text-size-adjust: 100% ;
+            -ms-text-size-adjust: 100% !important;
+            -webkit-font-smoothing: antialiased !important;
+            background-color: white;
+            margin-right: auto;
+            margin-left:  auto;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        p{
+            font-size: 13pt;
+            color: #969696;
+            padding: 10px;
+        }
+        #header{
+            height: 90px;
+            clear: both;
+        }
+        #image_container{
+            float: left;
+            height: 70px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        #content{
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            width: 100%;
+            clear: both;
+        }
+        #link{
+            font-family: Helvetica;
+            float: left;
+            width: 100%;
+            text-align: center;
+            font-size: 20pt;
+            margin-top: 80px;
+            margin-right: auto;
+            margin-left: auto;
+            color:#444444
+        }
+        #web-link2{
+
+            float: left;
+            margin: 10px;
+            color: #00a0dd;
+            font-size: 10pt;
+        }
+        #address{
+            font-size: 10pt;
+            float: left;
+            padding: 0;
+            margin: 10px;
+        }
+
+        </style>
+        <div id="container">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td align="center">
+                        <div id="header" style="height: 90px;clear: both;" align="left">
+                            <div id="image_container" style="float: left;height: 70px; margin-left: 10px; margin-bottom: 10px;"><a href="http://www.byzance.cz"><img title="Byzance IoT Platform" alt="Byzance logo" style="height: 70px;" src="http://www.byzance.cz/wp-content/uploads/2016/11/logo-copy-2.png"></a></div>
+                        </div>
+                        <div id="content" style="border-top: 1px solid #eee;border-bottom: 1px solid #eee;width: 100%;clear: both;" align="left">
+                            @Html(content)
+                        </div>
+                        <div id="footer" align="left">
+                            <a id="web-link2" href="http://www.byzance.cz" style="text-decoration: none !important;color: #00a0dd;float: left;margin: 10px;font-size: 10pt;">www.byzance.cz </a>
+                            <p id="address" style="font-size: 10pt;color: #969696;padding: 0;float: left;margin: 10px;">Růžová 1416/17, Praha 1, Nové město 110 00, CZ</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
